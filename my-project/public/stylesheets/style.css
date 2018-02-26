@@ -1,8 +1,251 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html, body{
+	width: 100%;
+	height: 100%;
+}
+.top-div{
+	width:100%; 
+	height:118px; 
+	background:#096; 
+	position:absolute; 
+	top:0; 
+	left:0;
+}
+#header-div {
+	background: #303030; height:76px;
 }
 
-a {
-  color: #00B7FF;
+#logo-div {
+	margin-left: 30px;
+	margin-top: 20px;
+	width: 262px;
+	height: 45px;
+	float: left;
+}
+
+#license-div {
+	height: 50px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+#license-div a:visited, #license-div a:link {
+  color: #EB8A3D;
+}
+
+#license-div a:hover {
+  text-decoration: none;
+  color: #EB8A3D;
+}
+#loading-div {
+	clear: right;
+	text-align: right;
+	display: block;
+}
+#submenu-div {
+	text-align: center;
+	width: 1000px;
+	position: absolute;
+	right: 0px;
+	height: 75px;
+}
+
+#submenu-div ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#submenu-div li {
+	float: right;
+	width: 82px;
+	height: 82px;
+	/*
+	border-left: 1px solid #27aae7;
+	border-right: 1px solid #0779ba;
+	*/
+}
+#submenu-div li a {
+	text-align: center;
+	height: 67px;
+	width: 82px;
+	padding-top: 8px;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+}
+#submenu-div li a:hover {
+	background:#404040;
+}
+#submenu-div li span {
+	margin-top: 6px;
+	display: block;
+}
+#submenu-div li img {
+	margin: auto;
+	display: block;
+	height:35px;
+}
+#menu-div {
+	background: #575757;
+	height: 41px;
+	border-bottom:1px solid #212121;
+}
+
+#menu-div ul {
+	margin: 0px 0px 0px 15px;
+	padding: 0;
+	list-style-type: none;
+}
+#menu-div ul li {
+	float: left;
+	display: block;
+	height: 41px;
+	line-height: 41px;
+	position: relative;
+}
+.muneFG {
+	height: 13px;
+	width: 0px;
+	border-right: 1px solid #656565;
+	margin-top: 15px;
+*margin-top:-18px;
+	_margin-top: 0px;
+	border-left: 1px solid #303030;
+	display: inline-block;
+}
+#menu-div ul li a {
+	float: LEFT;
+	color: #FFF;
+	padding: 0px 12px;
+	display: block;
+	text-decoration: none;
+	_margin-top: 14px;
+}
+#menu-div ul li a:hover {
+	background: #1887bb
+}
+#menu-div ul li a span {
+	margin-left: 10px;
+}
+#menu-div ul li div.drop_menu{
+	height:180px; width:160px;border:1px solid #e5e5e5; background:#f4f4f4; position:absolute;left:0;top:42px; z-index:1000;
+}
+.num {
+	width: 32px;
+	height: 16px;
+	background: url(../images/index-11_22.png) no-repeat scroll;
+	display: inline-block;
+	line-height: 16px;
+	vertical-align: middle;
+	text-align: center;
+}
+#menu-div ul li a img {
+	border: none;
+}
+#menu-div ul li ul {
+	display: none;
+}
+#menu-div ul li:hover a {
+	color: #fff;
+	background: #454545;
+}
+#menu-div ul li:hover ul {
+	display: block;
+	position: absolute;
+	top: 42px;
+	left: -15px;
+}
+#menu-div ul li:hover ul li {
+	border-bottom: 1px solid #11689c;
+	border-top: #1f9dd1 1px solid;
+}
+#menu-div ul li:hover ul li a {
+	width: 133px;
+	display: block;
+}
+#menu-div ul li:hover ul li a:hover {
+	width: 133px;
+	display: block;
+	background: #1480b3;
+}
+#menu-div ul li:hover ul li a.hide {
+	background: #6a3;
+	color: #fff;
+}
+#menu-div ul li:hover ul li:hover a.hide {
+	background: #6fc;
+	color: #fff;
+}
+#menu-div li.fix-spacer {
+	border: none;
+}
+.menuSerach {
+	width: 237px;
+	height: 15px;
+	float: right;
+	margin-right: 18px;
+	margin-top: -35px;
+	_width: 240px;
+}
+
+
+#main-div{
+	width:100%; 
+	background:#30C; 
+	position:absolute; 
+	top:118px; 
+	bottom:0;
+}
+#left-div{
+	width: 180px;
+	height: 100%;
+	background: #eee;
+	float: left;
+	overflow-y: scroll;
+}
+#right-div{
+	background:#ccc; 
+	overflow:hidden;
+	/*min-width: 500px;*/
+	height:100%;
+}
+#left-div ul{
+	margin: 0;
+	padding: 0;
+}
+#left-div ul li{
+	border-top: 1px solid #ccc;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+	color: #fff;
+}
+#tabbar-div{
+	margin: 0;
+	height: 43px;
+	background: #575757;
+}
+.tab-front{
+	margin: 0;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+	color: #fff;
+}
+.collapse{
+	height: 43px;
+	background: #575757;
+	line-height: 43px;
+
+}
+.menu-item{
+	height: 30px;
+	line-height: 30px;
+	display: none;
+}
+#left-div li:hover{
+	background-color:#454545;
 }
