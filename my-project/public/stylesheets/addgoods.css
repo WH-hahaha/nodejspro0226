@@ -1,8 +1,209 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#addGood a {
+	color: #000000;
+}
+#addGood .head{
+	border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: normal;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    position: relative;
+}
+#addGood .head h2{
+	display: inline-block;
+	vertical-align: middle;
+}
+#right .head h2 a{
+	font-size: 18px;
+	color: #333;
+}
+#addGood .head h2 a:hover{
+	color: #EB8A3D;
+	text-decoration: underline;
+}
+#addGood .head span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 18px;
+	color: #4c4c4c;
+}
+#addGood .head>a{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:10px ;
+}
+#addGood .head b{
+	height: 26px;
+    line-height: 26px;
+    padding: 0 10px 0 23px;
+    background: #c43926 url(../images/bg12.gif) no-repeat 6px center;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+}
+#addGood .nav{
+	background: #f3f3f3;
+    border: 1px solid #d7d7d7;
+    padding: 3px 1px 0 5px;
+    border-bottom:none ;
+    overflow: hidden;
+}
+#addGood .nav li{
+	padding: 0 20px;
+    text-align: center;
+    font-size: 13px;
+    float: left;
+    display: block;
+    float: left;
+    color: #787878;
+    line-height: 39px;
+    cursor: pointer;
+}
+ #addGood .nav .current{
+	background: #FFFFFF;
+	color: #000;
+}
+ #addGood .follow{
+ 	padding: 10px;
+    background: #fefefe;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    border-bottom: none;
+ }
+ #addGood .follow .gim{
+ 	display: block;
+ }
+#addGood .follow  td:first-child{
+	text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 5px 1em;
+    width: 30%;
+    line-height: 30px;
+}
+#addGood .follow  td:first-child a{
+	height: 16px;
+	width: 16px;
+	background: green;
+	color: white;
+	display: inline-block;
+	text-align: center;
+	line-height: 16px;
+	border-radius: 50%;
 }
 
-a {
-  color: #00B7FF;
+#addGood .follow  tr:nth-of-type(7) input{
+	width: 63px;
+	height: 22px;
+}
+#addGood .follow .gim #goodID{
+	width: 195px;
+	height: 22px;
+}
+#color{
+	width: 21px;
+	height: 18px;
+}
+#font-style{
+	margin: 5px 0;
+	height: 20px;
+}
+#goodCode{
+	width: 135px;
+	height: 22px;
+}
+#addGood #addCategory{
+	padding: 5px 15px 5px;
+    margin: 2px 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#good-brand{
+	width: 105px;
+	height: 20px;
+}
+#mark{
+	text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    border-width: 2px;
+    margin-right: 10px;
+}
+#addGood .follow .gim .time input:nth-of-type(odd){
+	width: 87px;
+	height: 22px;
+}
+#addGood .follow .gim .time input:nth-of-type(even){
+	height: 26px;
+	padding:0 15px ;
+    margin: 2px 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#addGood .describe{
+	width: 100%;
+	display: none;
+	 
+}
+#addGood .describe textarea{
+	width: 80%;
+	height: 400px;
+}
+#addGood .othernews{
+	display: none;
+}
+#addGood .property{
+	display: none;
+}
+#addGood .pic{
+	display: none;
+	padding: 10px 0 0 70px;
+}
+#addGood .yesgoods{
+	text-align: center;
+    padding: 3px 10px 13px;
+    background: #FFFFFF;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+  
+}
+#addGood .yesgoods input{
+	height: 26px;
+	padding: 5px 15px 5px;
+    margin: 2px 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#addGood .footer{
+	background: #f3f3f3;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #9CACAF;
+    margin: 10px 0;
+    text-align: center;
+}
+#turn-page{
+	text-align: right;
+}
+#turn-page a:hover{
+	color: #9D7250;
+	text-decoration: underline;
 }

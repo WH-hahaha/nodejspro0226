@@ -211,6 +211,10 @@ html, body{
 	/*min-width: 500px;*/
 	height:100%;
 }
+#right-content{
+	width: 100%;
+	height: 100%;
+}
 #left-div ul{
 	margin: 0;
 	padding: 0;
