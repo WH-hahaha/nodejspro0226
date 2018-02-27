@@ -253,3 +253,18 @@ html, body{
 #left-div li:hover{
 	background-color:#454545;
 }
+
+
+#left-div .current .hover{
+	background-color: #454545;
+}
+#left-div .current ul{
+	display: block;
+}
+#left-div .current span{
+	display: block;
+}
+#left-div .current ul li:hover{
+	background-color: #797979;
+  color: #fff;
+}
