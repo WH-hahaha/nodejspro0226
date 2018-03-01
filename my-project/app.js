@@ -9,6 +9,9 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+//连接数据库
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/h51725');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

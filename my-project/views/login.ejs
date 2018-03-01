@@ -136,9 +136,9 @@
 				success: function(res) {
 					console.log(res);
 					if(res.code == 1) {
-						location.href = "/?r=" + new Date().getTime();
+						location.href = "http://localhost:8080/index";
 					}else {
-						alert(res.message);
+						alert(res.message); 
 					}
 				}
 			})

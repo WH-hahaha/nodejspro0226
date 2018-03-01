@@ -1,146 +1,256 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>首页</title>
-    <link rel='stylesheet' href='../public/stylesheets/style.css' />
-    <link rel='stylesheet' href='../public/stylesheets/general.css' />
-
-</head>
-<body>
-	<div class="top-div">
-	    <div id="header-div">
-	  		<div id="logo-div" style="bgcolor:#000000;"><img src="../public/images/topLogo.png" alt="ECSHOP - power for e-commerce"></div>
-	  		<div id="license-div" style="bgcolor:#000000;"></div>
-	  		<div id="submenu-div">
-	    	<ul>
-	    		<li><a href="#"><img src="../public/images/topmune_08.png"><span>退出</span></a></li>
-	     		<li><a href="" class="fix-submenu"><img src="../public/images/qingchu.png" style="border:none;"><span>清除缓存</span></a></li>
-	      		<li><a href="#"><img src="../public/images/topmune_07.png"><span>关于 ECSHOP</span></a></li>
-	      
-	      		<li><a href="#"><img src="../public/images/topmune_007.png"><span>帮助</span></a></li>
-	      		<li><a href="#"><img src="../public/images/topmune_06.png"><span>查看网店</span></a></li>
-		    	<li><a href="#"><img src="../public/images/topmune_05.png"><span>管理员留言</span></a></li>
-		    	<li><a href="#"><img src="../public/images/topmune_04.png"><span>个人设置</span></a></li>
-		    	<li><a href="#"><img src="../public/images/topmune_03.png"><span>刷新</span></a></li>
-		    	<li><a href="#"><img src="../public/images/topmune_02.png"><span>记事本</span></a></li>
-		      
-		    	<li style=""><a href="#"><img src="../public/images/topmune_01.png"><span>开店向导</span></a></li>
-		    	<li style="width:102px;border-left:none;"><a href="#" style="color:#ff0; width:102px; font-weight:bold;"><img src="../public/images/topmune_09.png"><span>更多模板堂产品</span></a></li>
-	    	</ul>
-	    	<div id="send_info" style="padding: 5px 10px 0 0; clear:right;text-align: right; color: #FF9900;width:40%;float: right;  display:none;">
-	            <a href="#" class="fix-submenu">清除缓存</a>
-	      		<a href="#" class="fix-submenu">退出</a>
-	    	</div>
-	        <div id="load-div" style="padding: 5px 10px 0px 0px; text-align: right; color: rgb(255, 153, 0); display: none; width: 40%; float: right;"><img src="../public/images/top_loader.gif" alt="正在处理您的请求..." style="vertical-align: middle" width="16" height="16"> 正在处理您的请求...
-	        </div>
-			</div>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css"/>
+		 <script src="/javascripts/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="top">
+			<h1 class="logo"><img src="/images/bg1 (27).png"/></h1>
+			<ul class="right">
+				<li><a href="javascript:;"><img src="/images/bg1 (37).png"/><span>更多模板堂产品</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (28).png"/><span>开店向导</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (29).png"/><span>记事本</span></a></li>
+				<li><a href="#"><img src="/images/bg1 (30).png"/><span>刷新</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (31).png"/><span>个人设置</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (32).png"/><span>管理员留言</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (33).png"/><span>查看网点</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (34).png"/><span>帮助</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (35).png"/><span>关于ECSHOP</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (25).png"/><span>清除缓存</span></a></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (36).png"/><span>退出</span></a></li>
+			</ul>
 		</div>
-		<div id="menu-div">
+		<div id="nav">
 			<ul>
-			    <li class="fix-spacel">&nbsp;</li>
-			    <li style="border-left:none;"><a href="#"><img src="../public/images/index-11_07.png" style="border:none;" width="17" height="18" align="absmiddle"><span>起始页</span></a><span class="muneFG"></span></li>
-			    
-			    <li><a href="#"><img src="../public/images/index-11_41.png" width="17" height="18" align="absmiddle"><span>设置导航栏</span></a><span class="muneFG"></span></li>
-			    <li><a href="#"><img src="../public/images/index-11_09.png" width="17" height="18" align="absmiddle"><span>商品管理</span><span class="num">35</span></a><span class="muneFG"></span></li>
-		    	<li><a href="#"><img src="../public/images/dd.png" width="15" height="18" align="absmiddle"><span>订单管理</span><span class="num">0</span></a><span class="muneFG"></span></li>
-		    	<li><a href="#"><img src="../public/images/index-11_13.png" width="17" height="20" align="absmiddle"><span>广告管理</span><span class="num">0</span></a><span class="muneFG"></span></li>
-		    	<li><a href="#"><img src="../public/images/index-11_19.png" width="17" height="18" align="absmiddle"><span>用户评论</span><span class="num">0</span></a><span class="muneFG"></span></li>
-		        <li><a href="#">用户评论</a></li>
-		        <li><a href="#">商品列表</a></li>
-		        <li><a href="#">会员列表</a></li>
-		        <li><a href="#">商店设置</a></li>
-		        <li><a href="#">移动版</a></li>
-		        <li><a href="#">服务市场</a></li>
-		        <li class="fix-spacer">&nbsp;</li>
+				<li><a href="javascript:;"><img src="/images/bg1 (3).png"/>起始页 </a><span class="border"></span></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (8).png"/>设置导航栏</a><span class="border"></span></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (4).png"/>商品管理<span class="num">0</span></a><span class="border"></span></li>
+				<li><a href="javascript:;"><img src="/images/201.png"/>订单管理<span class="num">0</span></a><span class="border"></span></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (5).png"/>广告管理<span class="num">0</span></a><span class="border"></span></li>
+				<li><a href="javascript:;"><img src="/images/bg1 (6).png"/>用户评论<span class="num">0</span></a><span class="border"></span></li>
+				<li><a href="javascript:;">商品列表</a></li>
+				<li><a href="javascript:;">订单列表</a></li>
+				<li><a href="javascript:;">用户评论</a></li>
+				<li><a href="javascript:;">会员列表</a></li>
+				<li><a href="javascript:;">商店设置</a></li>
+				<li><a href="javascript:;">移动版</a></li>
+				<li><a href="javascript:;">服务市场</a></li>
 			</ul>
-			<br class="clear">
 		</div>
-	</div>
-	<div id="main-div">
-		<div id="left-div">
-			<div id="tabbar-div">
-			<p class="tab-front">
-			  导航菜单
-			</p>
-			</div>
-			<ul id="menu-ul">
-				<li class="collapse">
-					商品管理
+		<div id="left">
+			<h3>导航菜单</h3>
+			<ul>
+				<li>
+					<a class="hover" href="javascript:;">商品管理</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li class="goodlist"><a href="/product" target="content" style="background: none;color: #d7d7d7;line-height: 30px;">商品列表</a></li>
+						<li class="addgood"><a href="/addgood" target="content" style="background: none;color: #d7d7d7;line-height: 30px;">添加新商品</a></li>
+						<li>商品分类</li>
+						<li>用户评论</li>
+						<li>商品品牌</li>
+						<li>商品类型</li>
+						<li>商品回收站</li>
+						<li>图片批量处理</li>
+						<li>商品批量上传</li>
+						<li>商品批量导出</li>
+						<li>商品批量修改</li>
+						<li>生产商品代码</li>
+						<li>标签管理</li>
+						<li>虚拟商品列表</li>
+						<li>添加虚拟商品</li>
+						<li>更改加密串</li>
+						<li>商品自动上下架</li>
 					</ul>
 				</li>
-				<li class="collapse">
-					促销管理
+				<li>
+					<a class="hover" href="javascript:;">促销管理</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li>夺宝奇兵</li>
+						<li>红包类型</li>
+						<li>商品包装</li>
+						<li>祝福贺卡</li>
+						<li>团购活动</li>
+						<li>专题管理</li>
+						<li>拍卖活动</li>
+						<li>优惠活动</li>
+						<li>批发管理</li>
+						<li>超值礼包</li>
+						<li>积分商城商品</li>
 					</ul>
 				</li>
-				<li class="collapse">
-					订单管理
+				<li>
+					<a class="hover" href="javascript:;">订单管理</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li>订单列表</li>
+						<li>合并订单</li>
+						<li>订单打印</li>
+						<li>缺货登记</li>
+						<li>添加订单</li>
+						<li>发货单列表</li>
+						<li>退货单列表</li>
 					</ul>
 				</li>
-				<li class="collapse">
-					广告管理
+				<li>
+					<a class="hover" href="javascript:;">广告管理</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li>广告列表</li>
+						<li>广告位置</li>
+						
 					</ul>
 				</li>
-				<li class="collapse">报表统计
+				<li>
+					<a class="hover" href="javascript:;">报表统计</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li>流量分析</li>
+						<li>客户统计</li>
+						<li>订单统计</li>
+						<li>销售概况</li>
+						<li>会员排行</li>
+						<li>销售明细</li>
+						<li>搜索引擎</li>
+						<li>销售排行</li>
+						<li>访问购买率</li>
+						<li>站外投放JS</li>
 					</ul>
 				</li>
-				<li class="collapse">文章管理
+				<li>
+					<a class="hover" href="javascript:;">文章管理</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li>文章分类</li>
+						<li>文章列表</li>
+						<li>文章自动发布</li>
+						<li>在线调查</li>
 					</ul>
 				</li>
-				<li class="collapse">会员管理
+				<li>
+					<a class="hover" href="javascript:;">会员管理</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li>会员列表</li>
+						<li>添加会员</li>
+						<li>会员等级</li>
+						<li>会员整合</li>
+						<li>会员留言</li>
+						<li>充值和提现申请</li>
+						<li>资金管理</li>
 					</ul>
 				</li>
-				<li class="collapse">权限管理
+				<li>
+					<a class="hover" href="javascript:;">权限管理</a>
+					<span><b></b></span>
 					<ul>
-						<li class="menu-item">商品列表</li>
-						<li class="menu-item">添加新商品</li>
-						<li class="menu-item">商品分类</li>
+						<li>管理员列表</li>
+						<li>管理员日志</li>
+						<li>角色管理</li>
+						<li>办事处列表</li>
+						<li>供货商列表</li>
 					</ul>
 				</li>
-				<li class="collapse">系统设置</li>
-				<li class="collapse">模板管理</li>
-				<li class="collapse">数据库管理</li>
-				<li class="collapse">短信管理</li>
-				<li class="collapse">推荐统计</li>
-				<li class="collapse">邮件群发管理</li>
-				<li class="collapse">移动版</li>
-				<li class="collapse">模板堂知识库</li>
+				<li>
+					<a class="hover" href="javascript:;">系统设置</a>
+					<span><b></b></span>
+					<ul>
+						<li>商店设置</li>
+						<li>会员注册项设置</li>
+						<li>支付方式</li>
+						<li>配送方式</li>
+						<li>邮件服务器设置</li>
+						<li>地区列表</li>
+						<li>计划任务</li>
+						<li>友情链接</li>
+						<li>验证码管理</li>
+						<li>文件权限检测</li>
+						<li>文件校验</li>
+						<li>首页主广告管理</li>
+						<li>自定义导航栏</li>
+						<li>授权证书</li>
+						<li>站点地图</li>
+					</ul>
+				</li>
+				<li>
+					<a class="hover" href="javascript:;">模板管理</a>
+					<span><b></b></span>
+					<ul>
+						<li>模板选择</li>
+						<li>设置模板</li>
+						<li>库项目管理</li>
+						<li>语言项编辑</li>
+						<li>模板设置备份</li>
+						<li>邮件模板</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a class="hover" href="javascript:;">数据库管理</a>
+					<span><b></b></span>
+					<ul>
+						<li>数据备份</li>
+						<li>数据表优化</li>
+						<li>SQL查询</li>
+						<li>体验数据清除</li>
+						<li>转换数据</li>
+					</ul>
+				</li>
+				<li>
+					<a class="hover" href="javascript:;">短信管理</a>
+					<span><b></b></span>
+					<ul>
+						<li>发送短信</li>
+						<li>短信签名</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a class="hover" href="javascript:;">推荐管理</a>
+					<span><b></b></span>
+					<ul>
+						<li>推荐设置</li>
+						<li>分成管理</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a class="hover" href="javascript:;">邮件群发管理</a>
+					<span><b></b></span>
+					<ul>
+						<li>关注管理</li>
+						<li>邮件订阅管理</li>
+						<li>杂志管理</li>
+						<li>邮件队列管理</li>
+						
+					</ul>
+				</li>
+				<li>
+					<a class="hover" href="javascript:;">移动版管理</a>
+					<span><b></b></span>
+					<ul>
+						<li>移动版</li>	
+					</ul>
+				</li>
+				<li>
+					<a class="hover" href="javascript:;">模板堂知识库</a>
+					
+					<ul>
+						<li>在线手册</li>
+						<li>社区论坛</li>	
+					</ul>
+				</li>
 			</ul>
-		</div>	
-		<div id="right-div">
-			<iframe id="right-content" src="index_1.ejs" ></iframe>
-		</div>		
-	</div>
-	
-
-	 
-
-</body>
+		</div>
+		<div id="right">
+			<!-- <iframe id="content" name="content" src="http://localhost/addgood"></iframe> -->
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="/javascripts/shouye.js"></script>
 </html>
+
