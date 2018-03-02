@@ -47,7 +47,60 @@ router.get('/goodslist', function(req, res, next) {
   res.render('goodslist', {});
   
 });
+router.get('/loadpro', function(req, res, next) {
+		//console.log(req.query);
+ 		var keywords =  req.query.keywords;
+ 		console.log(keywords);
+ 		//console.log( keywords);
+ 		var pageNO = req.query.pageNO || 1;
+ 		pageNO = parseInt(pageNO);
+ 		var perPageCnt = req.query.perPageCnt || 15;
+		perPageCnt = parseInt(perPageCnt);
+		if(keywords != undefined){
+				GoodsModel.count({goods_name:{$regex: keywords},indate : 1}, function(err, count){
+					//console.log("数量:" + count);
+					var query = GoodsModel.find({goods_name:{$regex: keywords},indate : 1})
+					.skip((pageNO-1)*perPageCnt).limit(perPageCnt);
+					query.exec(function(err, docs){
+						//console.log(err, docs);
+						var result = {
+							total: count,
+							data: docs,
+							pageNO: pageNO
+						}
+						res.json(result);
+					});
+				})
+		}else{
+			GoodsModel.count({indate : 1}, function(err, count){
+				//console.log("数量:" + count);
+				var query = GoodsModel.find({indate : 1})
+				.skip((pageNO-1)*perPageCnt).limit(perPageCnt);
+				query.exec(function(err, docs){
+					//console.log(err, docs);
+					var result = {
+						total: count,
+						data: docs,
+						pageNO: pageNO
+					}
+					res.json(result);
+				});
+			})
+		}
+		
+});
 
+router.get('/update', function(req, res, next) {
+		var goods_Id = req.query.goods_Id;
+		console.log(goods_Id);
+		GoodsModel.update({goods_Id:goods_Id},{$set:{indate:0}}, function(err){
+			if(err){
+				console.log(err);
+			}else{
+				res.send("删除成功");
+			}
+		})
+});
 
 
 //添加商品

@@ -31,8 +31,8 @@ function loadpro(keywords,page,cont){
 			$("#gotoPage").val(res.pageNO);
 			var str ="";
 			for(var i in res.data){
-				var goods_Id =res.data[i].goods_Id;
-				var goods_name =res.data[i].goods_name ;
+				var goods_Id = res.data[i].goods_Id;
+				var goods_name = res.data[i].goods_name ;
 				var price = res.data[i].price;
 				var imgPath =res.data[i].imgPath;
 			  	var goods_Number = res.data[i].goods_Number;
@@ -138,6 +138,8 @@ $("#gotoPage").change(function(){
 	var cont = $("#pageSize").val();
 	loadpro(keywords,page,cont);
 })
+
+
 function update(goods_Id){
 	
 	if(confirm("确定删除这件商品吗")){
